@@ -1,7 +1,7 @@
-# UR369 NFT Collection
+# ur369NFT Collection
 
 ## Overview
-UR369 is a unique NFT collection consisting of 44,280 NFTs divided into 4 batches. Each NFT is soulbound (non-transferable) and features (A) utility for the ur369 ecosystem (i.e., a 36.9% refund when using urLegacy and (B) a unique claim mechanism for minters.
+UR369 is a unique NFT collection consisting of 44,280 NFTs divided into 4 batches. Each NFT is soulbound (non-transferable) and features (A) utility for the ur369 ecosystem (to begin a 36.9% refund when using urLegacy and (B) a unique claim mechanism for minters.
 
 ## Collection Structure
 - **Total Supply**: 44,280 NFTs

@@ -103,8 +103,8 @@ function tokenURI(uint256 tokenId) public view returns (string memory)
 ## Fee Recipients
 - Public Good Funds: 0xC4ef4EDACF31217B810B04702197EE2a0A13C4E3
 - Dev Funds: 0x58b1F6623e6b7dfe78b588d8F1645e5bc1e19807
-- urNFTETH: 0xC1A9F71A47448010c9ac58bDEb7b5e154dDD848d
-- Final Recipient: 0x1b38B0e5a461836C664418e5f19402FD9c6721a3
+- urNFTETH: 0x5cC0D9bE2FC2Df3B5d682574f2005EAca253b7d9
+- Final Recipient: 0xC4ef4EDACF31217B810B04702197EE2a0A13C4E3 
 
 ## Security Features
 1. ReentrancyGuard for minting and claiming

@@ -1,7 +1,7 @@
 # UR369 NFT Collection
 
 ## Overview
-UR369 is a unique NFT collection consisting of 44,280 NFTs divided into 4 batches. Each NFT is soulbound (non-transferable) and features a unique reward mechanism for holders.
+UR369 is a unique NFT collection consisting of 44,280 NFTs divided into 4 batches. Each NFT is soulbound (non-transferable) and features (A) utility for the ur369 ecosystem (i.e., a 36.9% refund when using urLegacy and (B) a unique claim mechanism for minters.
 
 ## Collection Structure
 - **Total Supply**: 44,280 NFTs
@@ -11,8 +11,8 @@ UR369 is a unique NFT collection consisting of 44,280 NFTs divided into 4 batche
   - Each Super Batch divided into 30 Sub-batches
   - Each Sub-batch: 369 NFTs
 
-## Pricing Structure
-Each batch has its own minting price:
+## Mint Event Structure
+Each batch has its own minting denomination:
 1. First Batch: 0.0369 ETH
 2. Second Batch: 0.0963 ETH
 3. Third Batch: 0.1845 ETH
@@ -23,30 +23,30 @@ Each batch has its own minting price:
 ### 1. Soulbound NFTs
 - NFTs are non-transferable (soulbound)
 - Each address can only mint one NFT
-- NFTs cannot be transferred or sold
+- NFTs cannot be sold on the markets
 
 ### 2. Reward Mechanism
-- Each mint contributes to a reward pool
-- Rewards are distributed in sub-batches
+- Each mint contributes 36.9% to the Claim Pool
+- Claim amounts are distributed in sub-batches
 - Claim window: 3 days, 6 hours, and 9 minutes
 - Winners are selected randomly from eligible minters
 
-#### Winner Selection Mechanism
-The current winner selection process uses a deterministic approach:
+#### Claimer Selection Mechanism
+The current claimer selection process uses a deterministic approach:
 1. Creates a seed using:
    - Active super batch ID
    - Active sub-batch ID
    - Last NFT minted timestamp
    - A fixed string for consistent hashing
 2. Uses this seed to select a random index from eligible minters
-3. Returns the minter at that index as the winner
+3. Returns the minter at that index as the claimer
 
 ### 3. Fee Distribution
 Fees from each mint are distributed as follows:
-- 36.9% to the reward pool
-- 3.69% to public good funds
-- 46.9% to dev funds
-- 12.51% to urNFTETH
+- 36.9% to the claim pool
+- 3.69% to public goods funding
+- 46.9% to ur369NFT-devs.eth (to help develop the Space Map)
+- 12.51% to ur369NFTETH
 
 ### 4. Metadata Structure
 - Each batch has its own metadata URI
@@ -78,13 +78,13 @@ function mint(address referrer) external payable
 - Records referral if provided
 - Distributes fees according to percentages
 
-#### Reward Claiming
+#### Claiming Mechanisnm
 ```solidity
 function claimReward() external nonReentrant
 ```
-- Claims rewards for eligible winners
+- Claims ETH for eligible minters
 - Verifies claim window
-- Transfers rewards to winner
+- Transfers claimed amount to minter/claimer
 - Marks batches as claimed
 
 #### Metadata

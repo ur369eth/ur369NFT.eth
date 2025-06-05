@@ -45,8 +45,8 @@ The current claimer selection process uses a deterministic approach:
 Fees from each mint are distributed as follows:
 - 36.9% to the claim pool
 - 3.69% to public goods funding
-- 46.9% to ur369NFT-devs.eth (to help develop the Space Map)
-- 12.51% to ur369NFTETH
+- 46.9% to ur369nft-devs.eth (to help develop the Space Map)
+- 12.51% to ur369nft-sustain.eth
 
 ### 4. Metadata Structure
 - Each batch has its own metadata URI
@@ -101,8 +101,8 @@ function tokenURI(uint256 tokenId) public view returns (string memory)
 - Triggers when all batches are completed and claim window expires
 
 ## Fee Recipients
-- Public Good Funds: 0xC4ef4EDACF31217B810B04702197EE2a0A13C4E3
-- Dev Funds: 0x58b1F6623e6b7dfe78b588d8F1645e5bc1e19807
+- Public Goods Funding: 0xC4ef4EDACF31217B810B04702197EE2a0A13C4E3
+- Devs Funding: 0x58b1F6623e6b7dfe78b588d8F1645e5bc1e19807
 - urNFTETH: 0x5cC0D9bE2FC2Df3B5d682574f2005EAca253b7d9
 - Final Recipient: 0xC4ef4EDACF31217B810B04702197EE2a0A13C4E3 
 

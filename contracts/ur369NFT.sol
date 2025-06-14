@@ -65,7 +65,7 @@ contract ur369NFT is
     address public urNFTETH = 0x5cC0D9bE2FC2Df3B5d682574f2005EAca253b7d9;
 
     // Add final recipient address
-    address public finalRecipient = 0x1b38B0e5a461836C664418e5f19402FD9c6721a3; // address that will receive allthe funds after all the batches are completed and still not claimed amount here
+    address public finalRecipient = 0xC4ef4EDACF31217B810B04702197EE2a0A13C4E3; // address that will receive allthe funds after all the batches are completed and still not claimed amount here
 
     // Fee distribution percentagewise
     uint256 public claimPoolPercentage = 3690; // 36.9%
